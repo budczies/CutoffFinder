@@ -1,0 +1,25 @@
+Package: CutoffFinder
+Type: Package
+Title: CutoffFinder
+Version: 1.0.0
+Date: 2018-09-01
+Authors@R: c(
+    person("Cristiano", "Oliveira", email = "cristiano.oliveira@med.uni-heidelberg.de", role = c("aut")),
+    person("Jan", "Budczies", email = "cristiano.oliveira@med.uni-heidelberg.de", role = c("aut", "cre")))
+Description:
+    Cutoff Finder is an easy–to–use shinyapp for the determination of cutoff points in tabular data.
+    Often, molecular data such as gene expression or protein expression data are represented by continuous or at least ordinal variables. In order to translate these variables into a clinical decision, it is necessary to determine a cutoff point and to stratify patients into two groups, each of which requiring a different kind of treatment. Cutoff Finder offers a multitude of methods for cutoff determination and plots.
+Imports:
+  stringr,
+  binom,
+  flexmix,
+  survival,
+  shiny,
+  shinyjs,
+  shinyBS
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr

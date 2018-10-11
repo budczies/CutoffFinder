@@ -1,0 +1,43 @@
+<h4>Introduction</h4>
+
+<p>
+Cutoff Finder is an easy&ndash;to&ndash;use web application for the determination of cutoff points in molecular data.
+Often, molecular data such as gene expression or protein expression data are represented by continuous or at least ordinal variables.
+In order to translate these variables into a clinical decision, it is necessary to determine a cutoff point and to stratify patients into two groups, each of which requiring a different kind of treatment.
+Cutoff Finder offers a multitude of methods for cutoff determination and plots.
+</p>
+
+<h4>License and citing</h4>
+
+<p>
+Cutoff Finder may be used freely and without any warranty of the developers.
+Cutoff calculations and plots can be used in scientific publications, but you are kindly asked to cite <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0051862" target="_blank">Budczies et al. (2012), PLoS ONE 7(12): e51862</a>.
+</p>
+
+<h4>Documentation</h4>
+
+<p>
+A documentation of all cutoff optimization and plot methods can be found in the <a href="docs/Cutoff_Finder_manual.pdf" target="_blank">Cutoff Finder manual</a>.
+A use case was presented as <a href="docs/CutoffFinder_poster_GCB2011.pdf" target="_blank">poster</a> at the German Bioinformatics on Conference (GCB) 2011.
+A more comprehensive discussion of the software can be found in a recent <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0051862" target="_blank">publication</a>.
+</p>
+
+<h4>Workflow</h4>
+
+<p>
+The data are processed as follows:
+</p>
+<!--
+<img src="www/fig1_workflow.jpg" width="100%"/>
+-->
+<img src="/www/fig1_workflow.jpg" width="100%"/>
+<ol>
+  <li> The data are uploaded from a tab&ndash;separated File, rows representing patients and columns representing variables.
+       Alternatively, one of three example data sets can be imported.
+  <li> The user selects the biomarker and optionally outcome and survival variables from the table columns.
+  <li> The user selects the method for cutoff determination.
+  <li> The user chooses the kinds of plots that should be generated.
+  <li> The inquiry is send to the statistical engine R.
+       The optimal cutoff point is determined and analysis plots are generated.
+  <li> The user is directed to the results webpage, where cutoff point and plots are shown.
+</ol>
